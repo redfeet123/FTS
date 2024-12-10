@@ -1,0 +1,136 @@
+body {
+    font-family: 'Inter', sans-serif; /* Using Inter as the primary font */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 46px;
+    gap: 350px;
+}
+
+/* General styles for all menu items */
+header .menus li a,
+header .log-sign .login,
+.logo-menu a {
+    text-decoration: none; 
+    color: #1C43B3; /* Default text color */
+    position: relative; /* Required for the ::after element */
+    padding-bottom: 5px; /* Increased space for the underline */
+}
+
+/* Thicker underline effect */
+header .menus li a::after,
+header .log-sign .login::after,
+.logo-menu a::after {
+    content: '';
+    position: absolute; /* Positioning for the underline */
+    width: 0; /* Initial width of the underline */
+    height: 4px; /* Height of the underline (increase for thickness) */
+    background-color: #1C43B3; /* Color of the underline */
+    bottom: 0; /* Position at the bottom of the link */
+    left: 0; /* Align left */
+    transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+/* CSS for selected state */
+header .menus li a.selected::after,
+header .log-sign .login.selected::after,
+.logo-menu a.selected::after {
+    content: '';
+    position: absolute;
+    width: 100%; /* Full width underline for selected state */
+    height: 4px; /* Height of the underline */
+    background-color: #1C43B3; /* Color of the underline */
+    bottom: 0; /* Position at the bottom of the link */
+    left: 0; /* Align left */
+}
+
+
+/* On hover, the underline expands */
+.menus a:hover::after,
+.logo-menu a:hover::after, 
+.log-sign .login:hover::after {
+    width: 100%; /* Full width underline on hover */
+}
+
+/* Flexbox styling for menus */
+.menus {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Center items horizontally */
+    gap: 36px; /* Spacing between menu items */
+}
+
+/* Styles for the header unordered list */
+header ul {
+    display: flex; /* Horizontal layout */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Center items horizontally */
+    gap: 106px; /* Spacing between the logo and menu items */
+    font-size: 17px; /* Font size for menu items */
+    padding-left: 0; /* No padding for the list */
+    list-style: none; /* No bullets for the list */
+    margin-bottom: 0;
+}
+
+/* Logo menu styles */
+.logo-menu {
+    display: flex; /* Horizontal layout for logo and links */
+    align-items: center; /* Vertically center items */
+    gap: 40px; /* Spacing between logo and other items */
+}
+
+/* Optional: Additional hover effects for better user experience */
+header .menus li a:hover,
+header .log-sign li .login,
+.logo-menu a:hover {
+    color: #1C43B3; /* Change text color on hover */
+}
+
+.log-sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.sign-up {
+    background-color: #1C43B3;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    text-decoration: none;
+}
+
+.sign-up:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05); /* Optional: slightly enlarges the button on hover */
+}
+
+
+.btn-secondary {
+    color: #1C43B3;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-secondary:hover {
+    color: black;
+    background-color: transparent;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.france-img {
+    width: 30px;
+    height: 31px;
+}

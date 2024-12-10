@@ -1,0 +1,130 @@
+body {
+    font-family: 'Inter', sans-serif;
+    /* Using Inter as the primary font */
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    gap: 105px;
+    margin-top: 297px;
+}
+
+.container1 img {
+    width: 600px;
+    height: 450px;
+}
+
+.container1-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 628px;
+}
+
+.container1 .container1-text h1 {
+    font-family: 'Varela Round';
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 66px;
+    letter-spacing: -4px;
+    color: #00B9FF;
+    margin-bottom: 20px;
+}
+
+.container1 .container1-text p {
+    width: 576px;
+    font-size: 21px;
+    font-weight: 400;
+    color: #8092A1;
+    line-height: 25.41px;
+    margin-bottom: 55px;
+
+}
+
+.container1 button {
+    background-color: #1C43B3;
+    padding: 20px 100px;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.container1 button:hover {
+    background-color: black;
+}
+
+.container1 a {
+    width: fit-content;
+}
+
+.container2_0 {
+    margin-top: 192px;
+    background-image: url(/images/Rectangle\ 2333.png);
+    width: 100%;
+    height: 775px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2_0 .hkltd {
+    font-weight: 700;
+    font-size: 55px;
+    font-family: 'Varela Round';
+    margin-bottom: 0;
+}
+
+.container2_0 .comp-number {
+    font-weight: 700;
+    font-size: 43px;
+    font-family: 'Varela Round';
+    margin-bottom: 115px;
+}
+
+.container2_0 .license {
+    display: flex;
+    align-items: center;
+    gap: 149px;
+}
+
+.container2_0 .license .jurisdiction h1 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.container2_0 .license .jurisdiction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px   ;
+}
+.container2_0 .license .jurisdiction .license-place {
+    display: flex;
+    align-items: center;
+    gap: 17px   ;
+}
+
+.container2_0 .license .jurisdiction .license-place p {
+    margin-bottom: 0;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.container2_0 .license-number, .container2_0 .govern {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container2_0 .license-number h1, .container2_0 .govern h1  {
+font-size: 28px;
+font-weight: 600;
+margin-bottom: 0;
+}
+
+.container2_0 .license-number p, .container2_0 .govern p {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
